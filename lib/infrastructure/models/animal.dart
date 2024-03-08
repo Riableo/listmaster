@@ -20,17 +20,17 @@ final animales = <Animal>[
   Animal(
     nombre: 'Gato', 
     especie: 'cat.webp', 
-    tipo: 'omnivoro'
+    tipo: 'Omnivoro'
   ),
   Animal(
     nombre: 'Perro', 
     especie: 'dog.webp', 
-    tipo: 'omnivoro'
+    tipo: 'Omnivoro'
   ),
   Animal(
     nombre: 'Caballo', 
     especie: 'horse.webp', 
-    tipo: 'herviboro'
+    tipo: 'Herviboro'
   ),
   Animal(
     nombre: 'Colibri', 
