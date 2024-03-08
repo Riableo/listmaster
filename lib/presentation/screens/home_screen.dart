@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           return GestureDetector(
             child: ListTile(
-              leading: Image.asset('assets/${animales[index].especie}', height: 80, width: 50),
+              leading: Image.asset('assets/animals/${animales[index].especie}', height: 80, width: 50),
               title: Text(animales[index].nombre, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 25),),
               subtitle: Text(animales[index].tipo, style: const TextStyle(fontSize: 20),),
             ),
@@ -45,7 +45,7 @@ class FichAnimal extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('assets/${animal.especie}',height: 350, width: 420),
+          Image.asset('assets/animals/${animal.especie}',height: 350, width: 420),
           Text('Tipo: ${animal.tipo}', style: const TextStyle(fontSize: 20),)
         ],
       ),
