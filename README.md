@@ -13,4 +13,13 @@ On the other hand, when we have select an item of the list (**onTap**) with *Ges
     <img src="assets/images/ficha.png" alt="Screen with my animal selected" style="width: 200px;">
 </p>
 
-This route was create with a class FichAnimal which make a new screen with only two items the image and a text like description of their animal type. 
+This route was created with a class FichAnimal which make a new screen with only two items the image and a text like description of their animal type. 
+
+## 🌞 Adaptive theme 🌚
+
+I used the plugin [adaptive_theme](https://pub.dev/packages/adaptive_theme "Doc about plugin") to change the application theme with a FloatingActionButton. 
+
+<p align="center">
+    <img src="assets/images/lightheme.png" alt="Screen light theme " style="width: 200px;">
+    <img src="assets/images/darktheme.png" alt="Screen dark theme " style="width: 200px;">
+</p>
