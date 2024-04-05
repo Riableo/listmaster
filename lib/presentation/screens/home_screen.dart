@@ -1,3 +1,4 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:listmaster/infrastructure/models/animal.dart';
 
@@ -7,6 +8,8 @@ class HomeScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    var aux = AdaptiveTheme.of(context).mode.isLight;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(titulo),
@@ -26,10 +29,18 @@ class HomeScreen extends StatelessWidget {
           );
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        child: aux ? const Icon(Icons.dark_mode_outlined) : const Icon(Icons.light_mode_outlined),
+        onPressed: (){
+          if (aux) {
+            AdaptiveTheme.of(context).setDark();
+          }else{
+            AdaptiveTheme.of(context).setLight();
+          }
+        }
+      )
     );
   }
-
-  
 }
 
 class FichAnimal extends StatelessWidget {
